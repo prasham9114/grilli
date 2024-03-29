@@ -1,28 +1,25 @@
 /* variables */
 :root 
 {
+    --gold-crayola: rgb(212, 172, 98);
+    --quick-silver: rgba(166, 166, 166, 1);
+    --davys-grey: rgba(87, 87, 87, 1);
+    --smoky-black-1: rgba(13, 13, 13, 1);
+    --smoky-black-2: rgba(13, 13, 13, 1);
+    --smoky-black-3: rgba(18, 18, 18, 1);
+    --eerie-black-1: rgba(29, 29, 29, 1);
+    --eerie-black-2: rgba(28, 28, 28, 1);
+    --eerie-black-3: rgba(26, 26, 26, 1);
+    --eerie-black-4: rgba(33, 33, 33, 1);
+    --white: rgba(255, 255, 255, 1);
+    --white-alpha-20: rgba(255, 255, 255, 0.2);
+    --white-alpha-10: rgba(255, 255, 255, 0.1);
+    --black: rgba(0, 0, 0, 1);
+    --black-alpha-80: rgba(0, 0, 0, 0.8);
+    --black-alpha-15: rgba(0, 0, 0, 0.15);
 
-
-    --gold-crayola: hsl(38, 61%, 73%);
-    --quick-silver: hsla(0, 0%, 65%, 1);
-    --davys-grey: hsla(30, 3%, 34%, 1);
-    --smoky-black-1: hsla(40, 12%, 5%, 1);
-    --smoky-black-2: hsla(30, 8%, 5%, 1);
-    --smoky-black-3: hsla(0, 3%, 7%, 1);
-    --eerie-black-1: hsla(210, 4%, 9%, 1);
-    --eerie-black-2: hsla(210, 4%, 11%, 1);
-    --eerie-black-3: hsla(180, 2%, 8%, 1);
-    --eerie-black-4: hsla(0, 0%, 13%, 1);
-    --white: hsla(0, 0%, 100%, 1);
-    --white-alpha-20: hsla(0, 0%, 100%, 0.2);
-    --white-alpha-10: hsla(0, 0%, 100%, 0.1);
-    --black: hsla(0, 0%, 0%, 1);
-    --black-alpha-80: hsla(0, 0%, 0%, 0.8);
-    --black-alpha-15: hsla(0, 0%, 0%, 0.15);
-  
-      
     --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%,  transparent 66.66% 75%);
-    --gradient-1: linear-gradient(to top,hsla(0, 0%, 0%, 0.9),hsla(0, 0%, 0%, 0.7),transparent);
+    --gradient-1: linear-gradient(to top,rgba(0, 0, 0, 0.9),rgba(0,0,0,0.7),transparent);
 
     /* font-family */
     --fontFamily-forum: 'Forum', cursive;
@@ -65,7 +62,7 @@
 
     --section-space: 70px;
 
-    --shadow-1: 0px 0px 25px 0px hsla(0, 0%, 0%, 0.25);
+    --shadow-1: 0px 0px 25px 0px rgba(0,0,0,0.25);
 
     --radius-24: 24px;
     --radius-circle: 50%;
@@ -354,24 +351,7 @@
     display: grid;
     gap: 40px;
   }
-  
-  .hover\:shine { position: relative; }
-  
-  .hover\:shine::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background-image: linear-gradient(to right, transparent 0%, #fff6 100%);
-    transform: skewX(-0.08turn) translateX(-180%);
-  }
-  
-  .hover\:shine:is(:hover, :focus-within)::after {
-    transform: skewX(-0.08turn) translateX(275%);
-    transition: var(--transition-3);
-  }
+
   
   .img-holder {
     aspect-ratio: var(--width) / var(--height);
@@ -519,7 +499,7 @@
     100% { background-position: 0%; }
   }
   
-  
+
   
   /* topbar */
   .topbar { display: none; }
@@ -694,13 +674,7 @@
     pointer-events: all;
   }
   
-  
-  
-  
-  
-  /*-----------------------------------*\
-    #HERO
-  \*-----------------------------------*/
+  /* Slider */
   
   .hero .slider-btn { display: none; }
   
@@ -823,10 +797,7 @@
   
   
   
-  
-  /*-----------------------------------*\
-    #SERVICE
-  \*-----------------------------------*/
+  /* Service */
   
   .service .section-title { margin-block-end: 16px; }
   
@@ -871,9 +842,7 @@
   
   
   
-  /*-----------------------------------*\
-    #ABOUT
-  \*-----------------------------------*/
+  /* About */
   
   .about .section-text { margin-block: 15px 30px; }
   
@@ -933,9 +902,7 @@
   
   
   
-  /*-----------------------------------*\
-    #SPECIAL DISH
-  \*-----------------------------------*/
+ /* Special Dish */
   
   .special-dish-content { padding-block: 70px; }
   
@@ -967,9 +934,7 @@
   
   
   
-  /*-----------------------------------*\
-    #MENU
-  \*-----------------------------------*/
+  /* Menu */
   
   .menu .section-title { margin-block-end: 40px; }
   
@@ -1049,9 +1014,7 @@
   
   
   
-  /*-----------------------------------*\
-    #TESTIMONIALS
-  \*-----------------------------------*/
+  /* Comments */
   
   .testi {
     padding-block-end: 340px;
@@ -1089,10 +1052,7 @@
   
   
   
-  
-  /*-----------------------------------*\
-    #RESERVATION
-  \*-----------------------------------*/
+  /* Reservation */
   
   .reservation-form { margin-block-start: -270px; }
   
@@ -1147,9 +1107,7 @@
   
   
   
-  /*-----------------------------------*\
-    #FEATURES
-  \*-----------------------------------*/
+  /* Features */
   
   .features .section-title { margin-block-end: 40px; }
   
@@ -1178,9 +1136,7 @@
   
   
   
-  /*-----------------------------------*\
-    #EVENT
-  \*-----------------------------------*/
+  /* Events */
   
   .event .section-title { margin-block-end: 40px; }
   
@@ -1226,13 +1182,9 @@
     margin-block-start: 40px;
   }
   
+
   
-  
-  
-  
-  /*-----------------------------------*\
-    #FOOTER
-  \*-----------------------------------*/
+  /* Footer */
   
   .footer-top { margin-block-end: 70px; }
   
@@ -1325,9 +1277,7 @@
   
   
   
-  /*-----------------------------------*\
-    #BACK TO TOP
-  \*-----------------------------------*/
+ /* Back To Top */
   
   .back-top-btn {
     position: fixed;
@@ -1362,35 +1312,15 @@
   
   
   
-  /*-----------------------------------*\
-    #MEDIA QUERIES
-  \*-----------------------------------*/
-  
+  /* Media Queries   */
   /**
    * responsive for larger than 575px screen
    */
   
   @media (min-width: 575px) {
-  
-    /**
-     * CUSTOM PROPERTY
-     */
-  
     :root {
-  
-      /**
-       * typography
-       */
-  
       --fontSize-body-2: 2rem;
-  
     }
-  
-  
-  
-    /**
-     * REUSED STYLE
-     */
   
     :is(.service, .about) .section-text {
       max-width: 420px;
@@ -1398,12 +1328,6 @@
     }
   
     .contact-number { --fontSize-body-1: 3rem; }
-  
-  
-  
-    /**
-     * TOPBAR
-     */
   
     .topbar {
       display: block;
@@ -1442,13 +1366,7 @@
     .topbar .link { transition: var(--transition-1); }
   
     .topbar .link:is(:hover, :focus-visible) { color: var(--gold-crayola); }
-  
-  
-  
-    /**
-     * HEADER
-     */
-  
+
     .header { top: 51px; }
   
     .header.active { top: 0; }
@@ -1457,31 +1375,13 @@
       display: block;
       margin-inline-start: auto;
     }
-  
-  
-  
-    /**
-     * HERO
-     */
-  
+
     .hero-btn { transform: scale(0.7); }
-  
-  
-  
-    /**
-     * SERVICE
-     */
   
     .service .container {
       max-width: 420px;
       margin-inline: auto;
     }
-  
-  
-  
-    /**
-     * ABOUT
-     */
   
     .about .container { gap: 80px; }
   
@@ -1490,12 +1390,6 @@
     .about .abs-img-1 { width: 285px; }
   
     .about .contact-number { --fontSize-body-1: 2.4rem; }
-  
-  
-  
-    /**
-     * MENU
-     */
   
     .menu-card .title-wrapper {
       display: flex;
@@ -1521,12 +1415,6 @@
       border-block: 1px solid var(--white-alpha-20);
     }
   
-  
-  
-    /**
-     * EVENT
-     */
-  
     .event .container {
       max-width: 420px;
       margin-inline: auto;
@@ -1537,11 +1425,7 @@
         width: 10rem;
         height: 7rem;
     }
-  
-    /**
-     * FOOTER
-     */
-  
+
     .footer-brand > * {
       max-width: 460px;
       margin-inline: auto;
@@ -1564,19 +1448,7 @@
   
   }
   
-  
-  
-  
-  
-  /**
-   * responsive for larger than 768px screen
-   */
-  
   @media (min-width: 768px) {
-  
-    /**
-     * REUSED STYLE
-     */
   
     .grid-list { grid-template-columns: 1fr 1fr; }
   
@@ -1588,19 +1460,7 @@
       margin-inline: auto;
     }
   
-  
-  
-    /**
-     * HEADER
-     */
-  
     .navbar-list { margin-inline: 30px; }
-  
-  
-  
-    /**
-     * HERO
-     */
   
     .hero .slider-btn {
       display: grid;
@@ -1628,12 +1488,6 @@
       color: var(--black);
     }
   
-  
-  
-    /**
-     * RESERVATION
-     */
-  
     .reservation .input-wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1644,29 +1498,11 @@
       grid-template-columns: repeat(3, 1fr);
     }
   
-  
-  
-    /**
-     * FOOTER
-     */
-  
     .footer-brand { grid-column: 1 / 3; }
   
   }
-  
-  
-  
-  
-  
-  /**
-   * responsive for larger than 992px screen
-   */
-  
+
   @media (min-width: 992px) {
-  
-    /**
-     * CUSTOM PROPERTY
-     */
   
     :root {
   
@@ -1678,12 +1514,6 @@
   
     }
   
-  
-  
-    /**
-     * REUSED STYLE
-     */
-  
     :is(.service, .event) .container { max-width: unset; }
   
     :is(.service, .event) .grid-list { grid-template-columns: repeat(3, 1fr); }
@@ -1692,22 +1522,10 @@
       grid-column: auto;
       width: 100%;
     }
-  
-  
-  
-    /**
-     * TOPBAR
-     */
-  
+
     .topbar-item:not(.link) { display: flex; }
   
     .topbar .item-2 { margin-inline-end: auto; }
-  
-  
-  
-    /**
-     * SERVICE
-     */
   
     .service .shape { display: block; }
   
@@ -1721,22 +1539,10 @@
       right: 0;
     }
   
-  
-  
-    /**
-     * ABOUT
-     */
-  
     .about .container {
       grid-template-columns: 0.7fr 1fr;
       gap: 30px;
     }
-  
-  
-  
-    /**
-     * SPECIAL DISH
-     */
   
     .special-dish {
       display: grid;
@@ -1760,12 +1566,6 @@
       animation: move 5s linear infinite;
     }
   
-  
-  
-    /**
-     * MENU
-     */
-  
     .menu .grid-list {
       position: relative;
       column-gap: 90px;
@@ -1780,34 +1580,16 @@
       border-inline-start: 1px solid var(--white-alpha-20);
     }
   
-  
-  
-    /**
-     * TESTIMONIALS
-     */
-  
     .testi-text {
       max-width: 910px;
       margin-inline: auto;
     }
-  
-  
-  
-    /**
-     * RESERVATION
-     */
-  
+
     .reservation-form {
       display: grid;
       grid-template-columns: 1fr 0.5fr;
     }
-  
-  
-  
-    /**
-     * FOOTER
-     */
-  
+
     .footer .grid-list {
       grid-template-columns: 0.45fr 1fr 0.45fr;
       align-items: center;
@@ -1824,35 +1606,14 @@
   }
   
   
-  
-  
-  
-  /**
-   * responsive for larger than 1200px screen
-   */
-  
   @media (min-width: 1200px) {
   
-    /**
-     * CUSTOM PROPERTY
-     */
-  
     :root {
-  
-      /**
-       * typography
-       */
   
       --fontSize-title-2: 2.5rem;
   
     }
-  
-  
-  
-    /**
-     * REUSED STYLE
-     */
-  
+
     .container,
     :is(.service, .event) .container {
       max-width: 1200px;
@@ -1860,22 +1621,10 @@
       margin-inline: auto;
     }
   
-  
-  
-    /**
-     * TOPBAR
-     */
-  
     .topbar .container { max-width: unset; }
   
     .topbar .separator { display: block; }
-  
-  
-  
-    /**
-     * HEADER
-     */
-  
+
     .nav-open-btn,
     .navbar > *:not(.navbar-list),
     .header .overlay { display: none; }
@@ -1916,12 +1665,6 @@
   
     .header .btn { margin-inline-start: 0; }
   
-  
-  
-    /**
-     * HERO
-     */
-  
     .hero { height: 880px; }
   
     .hero-btn {
@@ -1930,31 +1673,13 @@
       transform: scale(1);
     }
   
-  
-  
-    /**
-     * SERVICE
-     */
-  
     .service .grid-list { gap: 150px; }
   
     .service .grid-list li:nth-child(2n+1) { transform: translateY(-160px); }
   
-    .service .section-text { margin-block-end: 75px; }
-  
-  
-  
-    /**
-     * ABOUT
-     */
+    .service .section-text { margin-block-end: 75px; }s
   
     .about { padding-block: 170px 100px; }
-  
-  
-  
-    /**
-     * SPECIAL DISH
-     */
   
     .special-dish-content {
       padding: 225px 120px;
@@ -1966,59 +1691,21 @@
       margin-inline: 0;
     }
   
-  
-  
-    /**
-     * MENU
-     */
-  
     .menu .grid-list {
       gap: 55px 200px;
       margin-block-end: 55px;
     }
-  
-  
-  
-    /**
-     * TESTIMONIALS
-     */
-  
     .form-left,
     .form-right { padding: 75px 60px; }
-  
-  
-  
-  
-    /**
-     * FEATURES
-     */
   
     .features .grid-list { grid-template-columns: repeat(4, 1fr); }
   
   }
-  
-  
-  
-  
-  
-  /**
-   * responsive for larger than 1400px screen
-   */
-  
+
   @media (min-width: 1400px) {
-  
-    /**
-     * HEADER
-     */
-  
+
     .navbar { margin-inline: auto; }
-  
-  
-  
-    /**
-     * ABOUT
-     */
-  
+
     .about-content { padding-inline-end: 90px; }
   
     .about .shape {
@@ -2026,13 +1713,7 @@
       top: 46%;
       left: 0;
     }
-  
-  
-  
-    /**
-     * SPECIAL DISH
-     */
-  
+
     .special-dish {
       overflow: visible;
       position: relative;
@@ -2051,13 +1732,7 @@
       transform: translateY(50%);
       width: max-content;
     }
-  
-  
-  
-    /**
-     * FEATURES
-     */
-  
+s
     .features { overflow: visible; }
   
     .features .shape { display: block; }
